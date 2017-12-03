@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review system</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="clearfix" id="home-section">
+        <video autoplay loop muted>
+            <source src="images/vid-2.mov">
+        </video>
+        <header class="clearfix">
+            <a href="#logo" class="logo">
+				<img src="images/logo.png" alt="logo">
+			</a>
+            <button class="hamburger-btn">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-2"></span>
+            </button>
+            <nav class="nav-list clearfix">
+                <button class="hamburger-btn">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-2"></span>
+                </button>
+                <ul class="first-list">
+                    <li><a href="#features">features</a></li>
+                    <li><a href="#assets">assets</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#download">download</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="introductory-content">
+            <h1>Give your Review help Millions</h1>
+            <p>Review your products, Places where you go,Hotels that your'e about to visit, Schools for your children.and lot more....</p>
+            <a href="signup.html" target="_self" class="getstart-btn">Get Started</a>
+        </div>
+    </section>
+    <script>
+    $(function() {
+        $('.hamburger-btn').click(function() {
+            $('.hamburger-btn').toggleClass('open');
+            $('.nav-list').toggleClass("modal").toggleClass('bg-color');
+        });
+        $('.logo').click(function(e) {
+            e.preventDefault();
+            $('body,html').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+        $('.first-list li a').click(function(e) {
+            e.preventDefault();
+            $('body,html').animate({
+                scrollTop: $(this.hash).offset().top - 100
+            }, 1800);
+        });
+    });
+    </script>
+</body>
+
+</html>

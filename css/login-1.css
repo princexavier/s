@@ -1,0 +1,165 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #197325, #259823);
+}
+
+section:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 257px;
+    background: url(../images/wave.png) no-repeat;
+}
+
+form {
+    width: 50%;
+    height: 50%;
+    margin: 0px auto;
+    padding: 100px 0px 0px 0px;
+}
+
+form span {
+    padding: 10px 0px;
+    color: #fff;
+}
+
+form input {
+    outline: none;
+    width: 50%;
+    margin: 15px 0px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    color: #fff;
+}
+input:focus {
+    border-bottom: 2px solid #21bd75;
+}
+
+.submit {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 50%;
+    padding: 20px 40px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    color: #09751b;
+}
+
+.submit:hover {
+    transition: 0.5s;
+    background: #09751b;
+    color: #fff;
+}
+
+form a {
+    width: 130px;
+    text-decoration: none;
+    padding-top: 30px;
+    display: block;
+    color: #fff;
+}
+
+form>span,
+input {
+    display: block;
+}
+
+.forgot {
+    margin: 0px auto;
+    padding-top: 20%;
+    padding-bottom: 20px;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.submit-forgot {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 30px auto;
+    width: 300px;
+    padding: 20px 40px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    color: #09751b;
+}
+
+.submit-forgot:hover {
+    transition: 0.5s;
+    background: #09751b;
+    color: #fff;
+}
+
+
+/*-------------------------------------------------Media query starts here------------------*/
+
+@media only screen and (max-width: 420px) {
+    form {
+        width: 80%;
+    }
+    form input {
+        width: 100%;
+    }
+    .submit {
+        width: 100%;
+        padding: 14px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 421px){
+    form{
+        width: 55%;
+    }
+    form input{
+        width: 100%;
+    }
+    .submit{
+        width: 100%;
+        padding: 13px 28px;
+    }
+}
+@media screen and (max-width: 1025px) and (min-width: 769px){
+  
+  form input{
+    width: 100%;
+  }
+  .submit{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+  
+  form input{
+    width: 100%;
+  }
+  .submit{
+    width: 100%;
+  }
+}

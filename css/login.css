@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    background: #F9F9F9;
+    box-shadow: 2px 0px 8px 3px lightgrey;
+    padding: 5px 135px;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+}
+
+.login-btn {
+    float: right;
+    margin-top: 5px;
+    text-decoration: none;
+    padding: 20px 40px;
+    background: #0f8d30;
+    border-radius: 50px;
+    color: white;
+}
+
+ul li:nth-child(1) {
+    background: linear-gradient(to right, #3529294f, #00000059), url('https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D') no-repeat 0px 0px / cover;
+    float: left;
+    width: calc(100% / 2);
+    height: 100vh;
+    padding: 120px 100px 0px;
+}
+
+ul li:nth-child(2) {
+    padding: 220px 100px 0px;
+    float: right;
+    width: calc(100% / 2);
+}
+
+ul li h1 {
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+ul li p {
+    color: #fff;
+    font-size: 24px;
+    padding: 130px 8px 0px;
+}
+
+form {
+    width: 50%;
+    height: 50%;
+    margin: 0px auto;
+}
+
+form span {
+    padding: 10px 0px;
+}
+
+form input {
+    outline: none;
+    width: 100%;
+    margin: 15px 0px;
+    border: none;
+    border-bottom: 1px solid rebeccapurple;
+}
+
+form a {
+    text-decoration: none;
+    padding-top: 30px;
+    display: block;
+    color: #226522;
+}
+
+form>span,
+input {
+    display: block;
+}
