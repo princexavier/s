@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    background: #F9F9F9;
+    box-shadow: 2px 0px 8px 3px lightgrey;
+    padding: 5px 135px;
+}
+
+.list-items,
+.login-btn {
+    color: #0f8d30;
+    float: right;
+    margin-right: 50px;
+    margin-top: 15px;
+    text-decoration: none;
+    padding: 16px 34px;
+    border-radius: 40px;
+}
+
+.login-btn {
+    color: #fff;
+    padding: 14px 36px;
+    background: #0f8d30;
+}
+
+.colleges {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.colleges h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.colleges h2 {
+    color: #969696;
+    font-weight: lighter;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 42px;
+    margin-top: 35px;
+}
+
+.cities {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.cities li {
+    margin-top: 80px;
+    background-color: red;
+    height: 300px;
+    width: calc(100% / 3);
+    float: left;
+}
+
+.cities:nth-child(1) {}
+
+.cities:nth-child(2) {}
+
+.cities:nth-child(3) {}
